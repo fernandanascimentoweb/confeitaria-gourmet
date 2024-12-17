@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- biblioteca da mensagem -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/21ee42898d.js" crossorigin="anonymous"></script>
+    <!-- letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Doceria Gourmet! </title>
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+            src="./assets/logo_nova.png" 
+            alt=""
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-black">Doceria Gourmet </h1>
+
+            <span class="text-black font-medium">Rua : Numero 100, centro - Rio de Janeiro - Rj </span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- fim header -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        "Bem-vindo ao meu mundo doce!”
+    </h2>
+
+
+    <!-- inicio do menu  -->
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- produtos item -->
+             <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_banoffe.jpg" 
+                alt="Bolo Banoffe"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Banoffe</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 79.89</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Banoffe"
+                        data-price="79.89"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+
+             <!-- produtos item -->
+             <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_chocolate.jpg" 
+                alt="Bolo Chocolate"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Chocolate</p>
+                    <p class="text-sm"> Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 90.99</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Chocolate"
+                        data-price="90.99"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             <!-- produtos item -->
+             <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_chocolatemorango.jpg" 
+                alt="Bolo Chocolate e Morango"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Chocolate e Morango</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 77.89</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Chocolate e Morango"
+                        data-price="77.89"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             <!-- produtos item -->
+             <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_chocomorango.jpg" 
+                alt="Bolo Chocomorango"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Chocomorango</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 69.99</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Chocomorango"
+                        data-price="69.99"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+              <!-- produtos item -->
+              <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_kitkatmms.jpg" 
+                alt="Bolo Kitkat e MMs"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Kitkat e MMs</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 85.49</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Kitkat e MMs"
+                        data-price="85.49"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             
+              <!-- produtos item -->
+              <div class="flex gap-2">
+                <img 
+                src="./assets/bolo_kitkatsorvete.jpg" 
+                alt="Bolo Kitkat e Sorvete"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Kitkat e Sorvete</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 54.49</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Kitkat e Sorvete"
+                        data-price="54.49"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             <!-- produtos item -->
+             <div class="flex gap-2">   
+                <img 
+                src="./assets/bolo_morangochatily.jpg" 
+                alt="Bolo Morango e Chantily"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Morango e Chantily</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 49.99</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Morango e Chantily"
+                        data-price="49.99"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             <!-- produtos item -->
+             <div class="flex gap-2">   
+                <img 
+                src="./assets/bolo_prestigio.jpg" 
+                alt="Bolo Prestigio"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Bolo Prestigio</p>
+                    <p class="text-sm">Bolo tem cheiro de infância. Lembra casa de vó, remete a bons momentos em família. </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 87.99</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Bolo Prestigio"
+                        data-price="87.99"
+                        >
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+             </div>
+             <!-- fim produto item -->
+
+
+        </main>
+
+
+    </div>
+    <!-- fim menu -->
+
+    <!-- modal cart -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal"
+    >
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+
+            <p class="font-bold">Total : <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega : </p>
+            <input type="text"
+            placeholder="Digite seu endereço completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+
+            <p class="text-red-500 hidden" id="address-warn">Digite o seu endereço completo!
+            </p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fim modal cart -->
+
+    <!-- button cart footer -->
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button 
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <!-- fim button cart footer -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
